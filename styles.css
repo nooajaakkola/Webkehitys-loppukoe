@@ -1,428 +1,458 @@
+
+:root {
+    --dark-blue: #102A43;
+    --sea-blue: #2878A5;
+    --light-blue: #EAF4F8;
+    --white: #FFFFFF;
+    --sand: #D8C3A5;
+}
+
+/* Yleiset tyylit */
+
 * {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 html {
-  padding: 0;
-  font-family: Arial, Helvetica, sans-serif;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
 }
 
 body {
-  margin: 0;
-  padding: 0;
-  font-family: Arial, sans-serif;
-  color: #222;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: var(--light-blue);
+    color: var(--dark-blue);
 }
 
-/* header */
+/* Header */
 
 header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem 10rem;
-  background: #ffffff;
-  border-bottom: 1px solid #e5e5e5;
-  position: sticky;
-  top: 0;
-  z-index: 100;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 10rem;
+    background: var(--dark-blue);
+    border-bottom: 1px solid #e5e5e5;
+    position: sticky;
+    top: 0;
+    z-index: 100;
 }
 
 .logo {
-  display: flex;
-  align-items: center;
-  gap: 0.75rem;
-  font-size: 1.5rem;
-  font-weight: 700;
-  color: #000;
-  text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--white);
+    text-decoration: none;
 }
 
 #website-logo {
-  height: 3.5rem;
-  width: auto;
-  display: block;
+    height: 3.5rem;
+    width: auto;
+    display: block;
 }
 
 .nav {
-  display: flex;
-  gap: 1.5rem;
+    display: flex;
+    gap: 1.5rem;
 }
 
 .nav a {
-  color: #444;
-  text-decoration: none;
-  font-weight: 500;
-  padding: 0.25rem 0;
-  border-bottom: 2px solid transparent;
-  transition: color 0.2s, border-color 0.2s;
+    color: var(--white);
+    text-decoration: none;
+    font-weight: 500;
+    padding: 0.25rem 0;
+    border-bottom: 2px solid transparent;
+    transition: color 0.2s, border-color 0.2s;
 }
 
 .nav a:hover {
-  color: #111;
-  border-bottom-color: #111;
+    color: var(--sand);
+    border-bottom-color: var(--sand);
 }
 
-/* etusivu */
+/* Etusivu */
 
 main.home {
-  max-width: 1100px;
-  padding: 2rem 1rem;
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 2rem 1rem;
 }
 
 .intro {
-  text-align: center;
-  max-width: 700px;
-  margin: 0 auto 3rem;
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto 3rem;
 }
 
 .boats h2,
 .cta h2 {
-  text-align: center;
+    text-align: center;
 }
 
 .card-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 1.5rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
 }
 
 .card {
-  background: #fff;
-  border-radius: 8px;
-  overflow: hidden;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-  transition: transform 0.2s, box-shadow 0.2s;
+    background: var(--white);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
 }
 
 .card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+    transform: translateY(-4px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
 }
 
 .card a {
-  color: inherit;
-  text-decoration: none;
-  display: block;
+    color: inherit;
+    text-decoration: none;
+    display: block;
 }
 
 .card img {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
-  display: block;
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
 }
 
 .card-body {
-  padding: 1rem;
+    padding: 1rem;
 }
 
 .card-body h3 {
-  margin: 0 0 0.5rem;
+    margin: 0 0 0.5rem;
 }
 
 .price {
-  font-size: 1.25rem;
-  font-weight: 700;
-  color: #0a5c99;
-  margin: 0 0 0.5rem;
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--sea-blue);
+    margin: 0 0 0.5rem;
 }
 
 .card-link {
-  color: #0a5c99;
-  font-weight: 600;
+    color: var(--sea-blue);
+    font-weight: 600;
 }
 
 .cta {
-  text-align: center;
-  margin-top: 3rem;
-  padding: 2rem;
-  background: #f5f7fa;
-  border-radius: 8px;
+    text-align: center;
+    margin-top: 3rem;
+    padding: 2rem;
+    background: var(--white);
+    border-radius: 8px;
 }
 
 .button {
-  display: inline-block;
-  padding: 0.75rem 1.5rem;
-  background: #222;
-  color: #fff;
-  text-decoration: none;
-  border-radius: 6px;
-  font-weight: 600;
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    background: var(--sea-blue);
+    color: var(--white);
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: 600;
+    transition: background-color 0.2s;
 }
 
 .button:hover {
-  background: #444;
+    background: var(--dark-blue);
 }
+
+/* Footer */
 
 footer {
-  text-align: center;
-  padding: 1.5rem;
-  color: #666;
+    text-align: center;
+    padding: 1.5rem;
+    background-color: var(--dark-blue);
+    color: var(--white);
 }
 
-/* contact html tyylit */
+/* Contact-sivun tyylit */
 
 main {
-  max-width: 650px;
-  margin: 40px auto;
-  padding: 30px;
-  background-color: white;
-  border-radius: 8px;
+    max-width: 650px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: var(--white);
+    border-radius: 8px;
 }
 
 h1 {
-  text-align: center;
-  margin-bottom: 30px;
+    text-align: center;
+    margin-bottom: 30px;
 }
 
 form {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
 label {
-  font-weight: bold;
-  margin-top: 10px;
+    font-weight: bold;
+    margin-top: 10px;
 }
 
 input,
 select,
 textarea {
-  width: 100%;
-  padding: 12px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  font-size: 16px;
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    font-family: inherit;
 }
 
 textarea {
-  min-height: 150px;
-  resize: vertical;
+    min-height: 150px;
+    resize: vertical;
 }
 
 button {
-  margin-top: 20px;
-  padding: 12px;
-  background-color: #222;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  font-size: 16px;
-  cursor: pointer;
+    margin-top: 20px;
+    padding: 12px;
+    background-color: var(--sea-blue);
+    color: var(--white);
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.2s;
 }
 
 button:hover {
-  background-color: #444;
+    background-color: var(--dark-blue);
 }
 
-/* veneen esittelysivu */
+/* Veneen esittelysivu */
 
 main.boat {
-  max-width: 1100px;
-  padding: 2rem 1rem;
+    max-width: 1100px;
+    padding: 2rem 1rem;
 }
 
 .hero-grid {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
-  gap: 1.5rem;
-  flex-wrap: wrap;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 1.5rem;
+    flex-wrap: wrap;
 }
 
 .hero-info h1 {
-  text-align: left;
-  margin: 0.5rem 0;
+    text-align: left;
+    margin: 0.5rem 0;
 }
 
 .badge {
-  display: inline-block;
-  padding: 0.25rem 0.75rem;
-  background: #0a5c99;
-  color: #fff;
-  font-size: 0.85rem;
-  font-weight: 700;
-  border-radius: 999px;
+    display: inline-block;
+    padding: 0.25rem 0.75rem;
+    background: var(--sea-blue);
+    color: var(--white);
+    font-size: 0.85rem;
+    font-weight: 700;
+    border-radius: 999px;
 }
 
 .listing-subtitle {
-  margin: 0;
-  color: #555;
+    margin: 0;
+    color: #555;
 }
 
 .listing-price-box {
-  text-align: right;
+    text-align: right;
 }
 
 .listing-price-box .price {
-  display: block;
-  font-size: 2rem;
-  margin: 0;
+    display: block;
+    font-size: 2rem;
+    margin: 0;
 }
 
 .location {
-  color: #555;
+    color: #555;
 }
 
-/* galleria */
+/* Galleria */
 
 .boat-gallery {
-  display: grid;
-  grid-template-columns: 2fr 1fr;
-  gap: 1rem;
-  margin: 2rem 0;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 1rem;
+    margin: 2rem 0;
 }
 
 .boat-gallery figure {
-  margin: 0;
+    margin: 0;
 }
 
 .gallery-main img {
-  width: 100%;
-  height: 100%;
-  min-height: 320px;
-  max-height: 480px;
-  object-fit: cover;
-  border-radius: 8px;
-  display: block;
+    width: 100%;
+    height: 100%;
+    min-height: 320px;
+    max-height: 480px;
+    object-fit: cover;
+    border-radius: 8px;
+    display: block;
 }
 
 .gallery-main figcaption {
-  margin-top: 0.5rem;
-  font-size: 0.9rem;
-  color: #666;
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+    color: #666;
 }
 
 .gallery-side {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
 }
 
 .gallery-thumb img {
-  width: 100%;
-  height: 100%;
-  min-height: 150px;
-  max-height: 230px;
-  object-fit: cover;
-  border-radius: 8px;
-  display: block;
-  cursor: pointer;
-  transition: opacity 0.2s;
+    width: 100%;
+    height: 100%;
+    min-height: 150px;
+    max-height: 230px;
+    object-fit: cover;
+    border-radius: 8px;
+    display: block;
+    cursor: pointer;
+    transition: opacity 0.2s;
 }
 
 .gallery-thumb img:hover {
-  opacity: 0.8;
+    opacity: 0.8;
 }
 
-/* pikafaktat */
+/* Pikafaktat */
 
 .quick-specs {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  gap: 1rem;
-  margin-bottom: 2rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1rem;
+    margin-bottom: 2rem;
 }
 
 .spec-card {
-  background: #f5f7fa;
-  border-radius: 8px;
-  padding: 1rem;
-  text-align: center;
+    background: var(--light-blue);
+    border-radius: 8px;
+    padding: 1rem;
+    text-align: center;
 }
 
 .spec-label {
-  display: block;
-  font-size: 0.85rem;
-  color: #666;
-  margin-bottom: 0.25rem;
+    display: block;
+    font-size: 0.85rem;
+    color: #666;
+    margin-bottom: 0.25rem;
 }
 
 .spec-value {
-  font-size: 1.4rem;
+    font-size: 1.4rem;
 }
 
-/* sisältö */
+/* Sisältö */
 
 .listing-body {
-  display: grid;
-  grid-template-columns: 2fr 1fr;
-  gap: 2rem;
-  align-items: start;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 2rem;
+    align-items: start;
 }
 
 .listing-details h2 {
-  margin: 2rem 0 0.75rem;
+    margin: 2rem 0 0.75rem;
 }
 
 .listing-details section:first-child h2 {
-  margin-top: 0;
+    margin-top: 0;
 }
 
 .specs-list {
-  margin: 0;
+    margin: 0;
 }
 
 .spec-row {
-  display: flex;
-  justify-content: space-between;
-  gap: 1rem;
-  padding: 0.6rem 0;
-  border-bottom: 1px solid #e5e5e5;
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 0.6rem 0;
+    border-bottom: 1px solid #e5e5e5;
 }
 
 .spec-row dt {
-  font-weight: 700;
+    font-weight: 700;
 }
 
 .spec-row dd {
-  margin: 0;
-  text-align: right;
+    margin: 0;
+    text-align: right;
 }
 
 .equipment-list {
-  margin: 0;
-  padding-left: 1.25rem;
-  line-height: 1.7;
+    margin: 0;
+    padding-left: 1.25rem;
+    line-height: 1.7;
 }
 
 .contact-box {
-  position: sticky;
-  top: 6rem;
-  background: #f5f7fa;
-  border-radius: 8px;
-  padding: 1.5rem;
-  text-align: center;
+    position: sticky;
+    top: 6rem;
+    background: var(--light-blue);
+    border-radius: 8px;
+    padding: 1.5rem;
+    text-align: center;
 }
 
 .contact-box h2 {
-  margin-top: 0;
+    margin-top: 0;
 }
 
-/* mobiili */
+/* Responsiivisuus tableteille */
 
-@media (max-width: 600px) {
-  header {
-    flex-direction: column;
-    gap: 0.75rem;
-    padding: 1rem;
-  }
+@media (max-width: 900px) {
 
-  main {
-    margin: 20px;
-    padding: 20px;
-  }
+    header {
+        padding: 1rem 2rem;
+    }
 
-  main.home {
-    margin: 20px auto;
-    padding: 1rem;
-  }
+    .listing-body {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-box {
+        position: static;
+    }
 }
 
 /* Responsiivisuus mobiililaitteille */
+
 @media (max-width: 600px) {
+
+    header {
+        flex-direction: column;
+        gap: 0.75rem;
+        padding: 1rem;
+    }
+
+    .nav {
+        flex-direction: column;
+        align-items: center;
+        gap: 0.75rem;
+    }
 
     main {
         width: 95%;
@@ -430,21 +460,57 @@ main.boat {
         padding: 15px;
     }
 
+    main.home,
+    main.boat {
+        margin: 15px auto;
+        padding: 1rem;
+    }
+
     h1 {
         font-size: 24px;
     }
 
-    nav {
-        display: flex;
+    .hero-grid {
         flex-direction: column;
-        gap: 10px;
+        align-items: flex-start;
     }
 
-    nav a {
-        margin: 0;
+    .listing-price-box {
+        text-align: left;
     }
 
-    input, select, textarea {
+    .boat-gallery {
+        grid-template-columns: 1fr;
+    }
+
+    .gallery-main img {
+        min-height: 200px;
+    }
+
+    .gallery-side {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .gallery-thumb img {
+        min-height: 120px;
+    }
+
+    .listing-body {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-box {
+        position: static;
+    }
+
+    .spec-row {
+        flex-wrap: wrap;
+    }
+
+    input,
+    select,
+    textarea {
         font-size: 16px;
         padding: 10px;
     }
