@@ -1,22 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <link rel="stylesheet" href="styles.css">
-    </head>
-    <body>
-        <header>
-            <a href="/" class="logo">Logo</a>
-            <nav class="nav">
-                <a href="index.html">Home</a>
-                <a href="boat1.html">Boat 1</a>
-                <a href="contact.html">Contact</a>
-            </nav>
-        </header>
-        <main>
 
-        </main>
-        <footer>
-            
-        </footer>
-    </body>
+<head>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <a href="/" class="logo">Logo</a>
+        <nav class="nav">
+            <a href="index.html">Home</a>
+            <a href="boat1.html">Boat 1</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+    <main>
+        <form action="https://httpbin.org/post" method="POST">
+
+            <label for="name">Nimi:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Sähköposti:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Puhelinnumero:</label>
+            <input type="tel" id="phone" name="phone">
+
+            <label for="boat">Kiinnostava vene:</label>
+            <select id="boat" name="boat" required>
+                <option value="">Valitse vene</option>
+                <option value="vene1">Vene 1</option>
+                <option value="vene2">Vene 2</option>
+                <option value="vene3">Vene 3</option>
+            </select>
+
+            <label for="message">Viesti:</label>
+            <textarea id="message" name="message" required minlength="10"></textarea>
+
+            <button type="submit">Lähetä</button>
+
+        </form>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+
 </html>
