@@ -1,29 +1,214 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <link rel="stylesheet" href="styles.css">
-    </head>
-    <body>
-        <header>
-            <a href="/" class="logo"><img id="website-logo" src="/images/logo.png">Matin Venepaja</a>
-            <nav class="nav">
-                <a href="index.html">Home</a>
-                <a href="boat1.html">Boat 1</a>
-                <a href="contact.html">Contact</a>
-            </nav>
-        </header>   
-        <main>
-        <!-- PÄÄOTSIKKO JA HINTA (HERO) -->
-        <section class="hero-section">
-            <div class="container hero-grid">
-                <div class="hero-info">
-                    <!-- MUOKKAA: Veneen perustiedot -->
-                    <span class="badge">Myynnissä</span>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- MUOKKAA: Sivun otsikko -->
+    <title>Myydään: [Veneen merkki ja malli]</title>
+    <!-- MUOKKAA: Oma CSS-tiedostosi -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <main class="container">
+        <article class="boat-listing">
+
+            <!-- OTSIKKO JA HINTA -->
+            <header class="listing-header">
+                <div class="listing-title">
+                    <span class="status-badge">Myynnissä</span>
+                    <!-- MUOKKAA: Veneen nimi ja malli -->
                     <h1>Buster Magnum M5 + Yamaha F225</h1>
-                    <p class="subtitle">Siisti, hyvin pidetty ja säännöllisesti merkkihuollettu alumiinivene valmiina vesille.</p>
-                     
-                    <div class="price-box">
-                        <span class="price">44 900 €</span>
-                        <span class="location">Sijainti: Kokkola</span>
+                    <p class="listing-subtitle">Siisti, merkkihuollettu ja valmiina vesille.</p>
+                </div>
+                <div class="listing-price-box">
+                    <!-- MUOKKAA: Hinta ja sijainti -->
+                    <span class="price">44 900 €</span>
+                    <span class="location">Sijainti: Kokkola</span>
+                </div>
+            </header>
+
+            <!-- KUVAGALLERIA: 1 ISO KUVA + 2 PIENEMPÄÄ KUVAA -->
+            <section class="boat-gallery" aria-label="Veneen kuvat">
+                <!-- Iso pääkuva -->
+                <figure class="gallery-main">
+                    <!-- MUOKKAA: Pääkuvan tiedostopolku ja kuvaus -->
+                    <img id="main-boat-img" src="kuvat/vene-iso.jpg" alt="Yleiskuva veneestä">
+                    <figcaption id="main-boat-caption">Yleiskuva veneestä vesillä</figcaption>
+                </figure>
+
+                <!-- Kaksi pienempää kuvaa -->
+                <div class="gallery-side">
+                    <figure class="gallery-thumb">
+                        <!-- MUOKKAA: Ensimmäinen pikkukuva -->
+                        <img class="clickable-thumb" src="kuvat/vene-ohjaamo.jpg" alt="Veneen ohjaamo" data-caption="Ohjaamo ja navigointilaitteet">
+                    </figure>
+                    <figure class="gallery-thumb">
+                        <!-- MUOKKAA: Toinen pikkukuva -->
+                        <img class="clickable-thumb" src="kuvat/vene-avotila.jpg" alt="Veneen avotila" data-caption="Tilava taka-avotila">
+                    </figure>
+                </div>
+            </section>
+
+            <!-- PIKAFAKTAT -->
+            <section class="quick-specs" aria-label="Tärkeimmät tiedot">
+                <div class="spec-card">
+                    <span class="spec-label">Vuosimalli</span>
+                    <strong class="spec-value">2018</strong>
+                </div>
+                <div class="spec-card">
+                    <span class="spec-label">Moottori</span>
+                    <strong class="spec-value">225 hv</strong>
+                </div>
+                <div class="spec-card">
+                    <span class="spec-label">Ajotunnit</span>
+                    <strong class="spec-value">340 h</strong>
+                </div>
+                <div class="spec-card">
+                    <span class="spec-label">Pituus</span>
+                    <strong class="spec-value">7,10 m</strong>
+                </div>
+            </section>
+
+            <!-- PÄÄSISÄLTÖ: KUVAUS, TEKNISET TIEDOT & VARUSTEET -->
+            <div class="listing-body">
+                
+                <div class="listing-details">
+                    <!-- Esittelyteksti -->
+                    <section class="description">
+                        <h2>Esittely</h2>
+                        <!-- MUOKKAA: Myyntiteksti -->
+                        <p>
+                            Myydään erittäin hyväkuntoinen ja tarkalla pidolla ollut Buster Magnum M5. 
+                            Säilytetty talvet lämpimässä hallissa ja huollettu säännöllisesti joka syksy 
+                            valtuutetussa merkkihuollossa.
+                        </p>
+                        <p>
+                            Pohja on myrkkymaalattu keväällä, joten vene on suoraan valmis ajoon. 
+                            Mahdollisuus ostaa mukaan myös katsastettu jarrullinen venetraileri.
+                        </p>
+                    </section>
+
+                    <!-- Tekniset tiedot -->
+                    <section class="specifications">
+                        <h2>Tekniset tiedot</h2>
+                        <!-- MUOKKAA: Veneen ja moottorin tiedot -->
+                        <dl class="specs-list">
+                            <div class="spec-row">
+                                <dt>Merkki ja malli</dt>
+                                <dd>Buster Magnum M5</dd>
+                            </div>
+                            <div class="spec-row">
+                                <dt>Vuosimalli</dt>
+                                <dd>2018</dd>
+                            </div>
+                            <div class="spec-row">
+                                <dt>Runkomateriaali</dt>
+                                <dd>Alumiini</dd>
+                            </div>
+                            <div class="spec-row">
+                                <dt>Mitat (P × L)</dt>
+                                <dd>7,10 m × 2,50 m</dd>
+                            </div>
+                            <div class="spec-row">
+                                <dt>Henkilöluku</dt>
+                                <dd>8 hlö</dd>
+                            </div>
+                            <div class="spec-row">
+                                <dt>Moottori</dt>
+                                <dd>Yamaha F225 FETX (4-tahti, bensiini)</dd>
+                            </div>
+                            <div class="spec-row">
+                                <dt>Käyttötunnit</dt>
+                                <dd>340 h</dd>
+                            </div>
+                        </dl>
+                    </section>
+
+                    <!-- Varusteet -->
+                    <section class="equipment">
+                        <h2>Varusteet</h2>
+                        <!-- MUOKKAA: Varustelista -->
+                        <ul class="equipment-list">
+                            <li>Buster Q 16" -älynäyttö ja karttaplotteri</li>
+                            <li>Kaikuluotain</li>
+                            <li>Ajokuomu ja satamapeite</li>
+                            <li>Joustoistuimet ja taka-avotilan patjasarja</li>
+                            <li>Trimmitasot</li>
+                            <li>Vesihiihtokaari</li>
+                            <li>Kaksoisakkujärjestelmä</li>
+                            <li>Katsastusvarustus (ankkuri, köydet, lepuuttajat, sammutin)</li>
+                        </ul>
+                    </section>
+                </div>
+
+                <!-- SIVUPALKKI: MYYJÄN TIEDOT & YHTEYDENOTTO -->
+                <aside class="listing-sidebar">
+                    <div class="seller-card">
+                        <h2>Ota yhteyttä myyjään</h2>
+                        <p>Kysy lisää tai sovi näyttö ja koeajo.</p>
+                        
+                        <!-- MUOKKAA: Myyjän tiedot -->
+                        <ul class="seller-contact">
+                            <li><strong>Myyjä:</strong> Matti Meikäläinen</li>
+                            <li><strong>Puhelin:</strong> <a href="tel:+358401234567">040 123 4567</a></li>
+                            <li><strong>Sähköposti:</strong> <a href="mailto:matti@esimerkki.fi">matti@esimerkki.fi</a></li>
+                        </ul>
+
+                        <!-- MUOKKAA: Lomakkeen lähetysosoite (action) -->
+                        <form class="inquiry-form" action="#" method="POST">
+                            <div class="form-field">
+                                <label for="name">Nimesi *</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            <div class="form-field">
+                                <label for="email">Sähköposti *</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="form-field">
+                                <label for="phone">Puhelinnumero</label>
+                                <input type="tel" id="phone" name="phone">
+                            </div>
+                            <div class="form-field">
+                                <label for="message">Viesti *</label>
+                                <textarea id="message" name="message" rows="4" required>Hei! Olen kiinnostunut myynnissä olevasta veneestä.</textarea>
+                            </div>
+                            <button type="submit" class="btn-submit">Lähetä viesti</button>
+                        </form>
                     </div>
-                </main>
+                </aside>
+
+            </div>
+        </article>
+    </main>
+
+    <!-- KUVIEN VAIHTO: Pikkukuvaa klikkaamalla se vaihtuu isoksi kuvaksi -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const mainImg = document.getElementById('main-boat-img');
+            const mainCaption = document.getElementById('main-boat-caption');
+            const thumbs = document.querySelectorAll('.clickable-thumb');
+
+            thumbs.forEach(thumb => {
+                thumb.addEventListener('click', () => {
+                    // Tallenna nykyisen pääkuvan tiedot
+                    const currentSrc = mainImg.src;
+                    const currentAlt = mainImg.alt;
+                    const currentCaption = mainCaption.textContent;
+
+                    // Vaihda klikattu kuva pääkuvaksi
+                    mainImg.src = thumb.src;
+                    mainImg.alt = thumb.alt;
+                    mainCaption.textContent = thumb.dataset.caption || thumb.alt;
+
+                    // Siirrä aiempi pääkuva pikkukuvan paikalle
+                    thumb.src = currentSrc;
+                    thumb.alt = currentAlt;
+                    thumb.dataset.caption = currentCaption;
+                });
+            });
+        });
+    </script>
+
+</body>
+</html>
