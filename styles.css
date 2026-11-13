@@ -1,0 +1,8 @@
+header {
+    background-color: red;
+    height: 10vw;
+    width: 100%;
+    box-sizing: border-box;
+    position:fixed;
+    
+}
