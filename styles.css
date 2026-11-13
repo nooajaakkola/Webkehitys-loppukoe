@@ -420,3 +420,36 @@ main.boat {
     padding: 1rem;
   }
 }
+
+/* Responsiivisuus mobiililaitteille */
+@media (max-width: 600px) {
+
+    main {
+        width: 95%;
+        margin: 15px auto;
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    nav a {
+        margin: 0;
+    }
+
+    input, select, textarea {
+        font-size: 16px;
+        padding: 10px;
+    }
+
+    button {
+        width: 100%;
+    }
+}
