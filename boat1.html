@@ -1,53 +1,52 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fi">
     <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Buster Magnum M5 + Yamaha F225 – Matin Venepaja</title>
         <link rel="stylesheet" href="styles.css">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
         <header>
-            <a href="/" class="logo"><img id="website-logo" src="/images/logo.png">Matin Venepaja</a>
+            <a href="index.html" class="logo"><img id="website-logo" src="images/logo.png" alt="Matin Venepaja logo">Matin Venepaja</a>
             <nav class="nav">
                 <a href="index.html">Etusivu</a>
                 <a href="boat1.html">Veneet</a>
                 <a href="contact.html">Ota yhteyttä</a>
             </nav>
-        </header>   
-        <main>
-        <!-- PÄÄOTSIKKO JA HINTA (HERO) -->
-        <section class="hero-section">
-            <div class="container hero-grid">
-                <div class="hero-info">
-                    <!-- MUOKKAA: Veneen perustiedot -->
-                    <span class="badge">Myynnissä</span>
-                    <h1>Buster Magnum M5</h1>
-                    <p class="listing-subtitle">Siisti, merkkihuollettu ja valmiina vesille.</p>
-                </div>
-                <div class="listing-price-box">
-                    <!-- MUOKKAA: Hinta ja sijainti -->
-                    <span class="price">44 900 €</span>
-                    <span class="location">Sijainti: Kokkola</span>
-                </div>
-            </header>
+        </header>
 
-            <!-- KUVAGALLERIA: 1 ISO KUVA + 2 PIENEMPÄÄ KUVAA -->
+        <main class="boat">
+
+            <!-- PÄÄOTSIKKO JA HINTA -->
+            <section class="hero-section">
+                <div class="hero-grid">
+                    <div class="hero-info">
+                        <span class="badge">Myynnissä</span>
+                        <h1>Buster Magnum M5 + Yamaha F225</h1>
+                        <p class="listing-subtitle">Siisti, merkkihuollettu ja valmiina vesille.</p>
+                    </div>
+                    <div class="listing-price-box">
+                        <span class="price">44 900 €</span>
+                        <span class="location">Sijainti: Kokkola</span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- KUVAGALLERIA -->
             <section class="boat-gallery" aria-label="Veneen kuvat">
-                <!-- Iso pääkuva -->
                 <figure class="gallery-main">
-                    <!-- MUOKKAA: Pääkuvan tiedostopolku ja kuvaus -->
-                    <img id="main-boat-img" src="images/boat1.jpg" alt="Yleiskuva veneestä">
+                    <img id="main-boat-img" src="images/vene-iso.jpg" alt="Yleiskuva veneestä">
                     <figcaption id="main-boat-caption">Yleiskuva veneestä vesillä</figcaption>
                 </figure>
 
-                <!-- Kaksi pienempää kuvaa -->
                 <div class="gallery-side">
                     <figure class="gallery-thumb">
-                        <!-- MUOKKAA: Ensimmäinen pikkukuva -->
-                        <img class="clickable-thumb" src="kuvat/vene-ohjaamo.jpg" alt="Veneen ohjaamo" data-caption="Ohjaamo ja navigointilaitteet">
+                        <img class="clickable-thumb" src="images/vene-ohjaamo.jpg" alt="Veneen ohjaamo" data-caption="Ohjaamo ja navigointilaitteet">
                     </figure>
                     <figure class="gallery-thumb">
-                        <!-- MUOKKAA: Toinen pikkukuva -->
-                        <img class="clickable-thumb" src="kuvat/vene-avotila.jpg" alt="Veneen avotila" data-caption="Tilava taka-avotila">
+                        <img class="clickable-thumb" src="images/vene-avotila.jpg" alt="Veneen avotila" data-caption="Tilava taka-avotila">
                     </figure>
                 </div>
             </section>
@@ -72,29 +71,25 @@
                 </div>
             </section>
 
-            <!-- PÄÄSISÄLTÖ: KUVAUS, TEKNISET TIEDOT & VARUSTEET -->
+            <!-- PÄÄSISÄLTÖ -->
             <div class="listing-body">
-                
+
                 <div class="listing-details">
-                    <!-- Esittelyteksti -->
                     <section class="description">
                         <h2>Esittely</h2>
-                        <!-- MUOKKAA: Myyntiteksti -->
                         <p>
-                            Myydään erittäin hyväkuntoinen ja tarkalla pidolla ollut Buster Magnum M5. 
-                            Säilytetty talvet lämpimässä hallissa ja huollettu säännöllisesti joka syksy 
+                            Myydään erittäin hyväkuntoinen ja tarkalla pidolla ollut Buster Magnum M5.
+                            Säilytetty talvet lämpimässä hallissa ja huollettu säännöllisesti joka syksy
                             valtuutetussa merkkihuollossa.
                         </p>
                         <p>
-                            Pohja on myrkkymaalattu keväällä, joten vene on suoraan valmis ajoon. 
+                            Pohja on myrkkymaalattu keväällä, joten vene on suoraan valmis ajoon.
                             Mahdollisuus ostaa mukaan myös katsastettu jarrullinen venetraileri.
                         </p>
                     </section>
 
-                    <!-- Tekniset tiedot -->
                     <section class="specifications">
                         <h2>Tekniset tiedot</h2>
-                        <!-- MUOKKAA: Veneen ja moottorin tiedot -->
                         <dl class="specs-list">
                             <div class="spec-row">
                                 <dt>Merkki ja malli</dt>
@@ -127,10 +122,8 @@
                         </dl>
                     </section>
 
-                    <!-- Varusteet -->
                     <section class="equipment">
                         <h2>Varusteet</h2>
-                        <!-- MUOKKAA: Varustelista -->
                         <ul class="equipment-list">
                             <li>Buster Q 16" -älynäyttö ja karttaplotteri</li>
                             <li>Kaikuluotain</li>
@@ -144,73 +137,31 @@
                     </section>
                 </div>
 
-                <!-- SIVUPALKKI: MYYJÄN TIEDOT & YHTEYDENOTTO -->
-                <aside class="listing-sidebar">
-                    <div class="seller-card">
-                        <h2>Ota yhteyttä myyjään</h2>
-                        <p>Kysy lisää tai sovi näyttö ja koeajo.</p>
-                        
-                        <!-- MUOKKAA: Myyjän tiedot -->
-                        <ul class="seller-contact">
-                            <li><strong>Myyjä:</strong> Matti Meikäläinen</li>
-                            <li><strong>Puhelin:</strong> <a href="tel:+358401234567">040 123 4567</a></li>
-                            <li><strong>Sähköposti:</strong> <a href="mailto:matti@esimerkki.fi">matti@esimerkki.fi</a></li>
-                        </ul>
-
-                        <!-- MUOKKAA: Lomakkeen lähetysosoite (action) -->
-                        <form class="inquiry-form" action="#" method="POST">
-                            <div class="form-field">
-                                <label for="name">Nimesi *</label>
-                                <input type="text" id="name" name="name" required>
-                            </div>
-                            <div class="form-field">
-                                <label for="email">Sähköposti *</label>
-                                <input type="email" id="email" name="email" required>
-                            </div>
-                            <div class="form-field">
-                                <label for="phone">Puhelinnumero</label>
-                                <input type="tel" id="phone" name="phone">
-                            </div>
-                            <div class="form-field">
-                                <label for="message">Viesti *</label>
-                                <textarea id="message" name="message" rows="4" required>Hei! Olen kiinnostunut myynnissä olevasta veneestä.</textarea>
-                            </div>
-                            <button type="submit" class="btn-submit">Lähetä viesti</button>
-                        </form>
-                    </div>
+                <aside class="contact-box">
+                    <h2>Kiinnostuitko?</h2>
+                    <p>Kysy lisää veneestä tai sovi katselmus.</p>
+                    <a href="contact.html" class="button">Ota yhteyttä</a>
                 </aside>
 
             </div>
-        </article>
-    </main>
+        </main>
 
-    <!-- KUVIEN VAIHTO: Pikkukuvaa klikkaamalla se vaihtuu isoksi kuvaksi -->
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            const mainImg = document.getElementById('main-boat-img');
-            const mainCaption = document.getElementById('main-boat-caption');
-            const thumbs = document.querySelectorAll('.clickable-thumb');
+        <footer>
+            <p>&copy; 2026 Matin Venepaja</p>
+        </footer>
 
-            thumbs.forEach(thumb => {
-                thumb.addEventListener('click', () => {
-                    // Tallenna nykyisen pääkuvan tiedot
-                    const currentSrc = mainImg.src;
-                    const currentAlt = mainImg.alt;
-                    const currentCaption = mainCaption.textContent;
+        <script>
+            // Klikkaa pikkukuvaa niin se vaihtuu pääkuvaksi
+            const mainImg = document.getElementById("main-boat-img");
+            const mainCaption = document.getElementById("main-boat-caption");
 
-                    // Vaihda klikattu kuva pääkuvaksi
+            document.querySelectorAll(".clickable-thumb").forEach(function (thumb) {
+                thumb.addEventListener("click", function () {
                     mainImg.src = thumb.src;
                     mainImg.alt = thumb.alt;
-                    mainCaption.textContent = thumb.dataset.caption || thumb.alt;
-
-                    // Siirrä aiempi pääkuva pikkukuvan paikalle
-                    thumb.src = currentSrc;
-                    thumb.alt = currentAlt;
-                    thumb.dataset.caption = currentCaption;
+                    mainCaption.textContent = thumb.dataset.caption;
                 });
             });
-        });
-    </script>
-
-</body>
+        </script>
+    </body>
 </html>

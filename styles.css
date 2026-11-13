@@ -217,6 +217,190 @@ button:hover {
   background-color: #444;
 }
 
+/* veneen esittelysivu */
+
+main.boat {
+  max-width: 1100px;
+  padding: 2rem 1rem;
+}
+
+.hero-grid {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.hero-info h1 {
+  text-align: left;
+  margin: 0.5rem 0;
+}
+
+.badge {
+  display: inline-block;
+  padding: 0.25rem 0.75rem;
+  background: #0a5c99;
+  color: #fff;
+  font-size: 0.85rem;
+  font-weight: 700;
+  border-radius: 999px;
+}
+
+.listing-subtitle {
+  margin: 0;
+  color: #555;
+}
+
+.listing-price-box {
+  text-align: right;
+}
+
+.listing-price-box .price {
+  display: block;
+  font-size: 2rem;
+  margin: 0;
+}
+
+.location {
+  color: #555;
+}
+
+/* galleria */
+
+.boat-gallery {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 1rem;
+  margin: 2rem 0;
+}
+
+.boat-gallery figure {
+  margin: 0;
+}
+
+.gallery-main img {
+  width: 100%;
+  height: 100%;
+  min-height: 320px;
+  max-height: 480px;
+  object-fit: cover;
+  border-radius: 8px;
+  display: block;
+}
+
+.gallery-main figcaption {
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.gallery-side {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.gallery-thumb img {
+  width: 100%;
+  height: 100%;
+  min-height: 150px;
+  max-height: 230px;
+  object-fit: cover;
+  border-radius: 8px;
+  display: block;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+
+.gallery-thumb img:hover {
+  opacity: 0.8;
+}
+
+/* pikafaktat */
+
+.quick-specs {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.spec-card {
+  background: #f5f7fa;
+  border-radius: 8px;
+  padding: 1rem;
+  text-align: center;
+}
+
+.spec-label {
+  display: block;
+  font-size: 0.85rem;
+  color: #666;
+  margin-bottom: 0.25rem;
+}
+
+.spec-value {
+  font-size: 1.4rem;
+}
+
+/* sisältö */
+
+.listing-body {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 2rem;
+  align-items: start;
+}
+
+.listing-details h2 {
+  margin: 2rem 0 0.75rem;
+}
+
+.listing-details section:first-child h2 {
+  margin-top: 0;
+}
+
+.specs-list {
+  margin: 0;
+}
+
+.spec-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0.6rem 0;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.spec-row dt {
+  font-weight: 700;
+}
+
+.spec-row dd {
+  margin: 0;
+  text-align: right;
+}
+
+.equipment-list {
+  margin: 0;
+  padding-left: 1.25rem;
+  line-height: 1.7;
+}
+
+.contact-box {
+  position: sticky;
+  top: 6rem;
+  background: #f5f7fa;
+  border-radius: 8px;
+  padding: 1.5rem;
+  text-align: center;
+}
+
+.contact-box h2 {
+  margin-top: 0;
+}
+
 /* mobiili */
 
 @media (max-width: 600px) {
