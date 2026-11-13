@@ -52,10 +52,17 @@ header {
 }
 
 #website-logo {
-    height: 3.5rem;
-    width: auto;
-    display: block;
+  height: 3.5rem;
+  width: auto;
+  display: block;
+  transition: transform 1.5s ease;
 }
+
+#website-logo.moved  {
+  transform: translateX(-300px);
+}
+
+
 
 .nav {
     display: flex;
