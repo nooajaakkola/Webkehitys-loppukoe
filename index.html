@@ -16,6 +16,14 @@
             </nav>
         </header>
 
+        <script>
+            const logo = document.getElementById("website-logo");
+
+            logo.addEventListener("mouseenter", function () {
+                logo.classList.add("moved");
+            });
+        </script>
+
         <main class="home">
             <section class="intro">
                 <h1>Tervetuloa Matin Venepajalle</h1>
@@ -36,26 +44,26 @@
                         <a href="boat1.html">
                             <img src="images/boat1.jpg" alt="Vene 1">
                             <div class="card-body">
-                                <h3>Veneen 1 malli</h3>
-                                <p class="price">00 000 €</p>
+                                <h3>Terhi - 475 Twin C</h3>
+                                <p class="price">9 900 €</p>
                                 <span class="card-link">Katso lisätiedot →</span>
                             </div>
                         </a>
                     </article>
 
                     <article class="card">
-                        <img src="images/boat2.jpg" alt="Vene 2">
+                        <img src="images/magnum.png" alt="Vene 2">
                         <div class="card-body">
-                            <h3>Veneen 2 malli</h3>
-                            <p class="price">00 000 €</p>
+                            <h3>Buster Magnum CC</h3>
+                            <p class="price">49 000 €</p>
                         </div>
                     </article>
 
                     <article class="card">
-                        <img src="images/boat3.jpg" alt="Vene 3">
+                        <img src="images/tug.png" alt="Vene 3">
                         <div class="card-body">
-                            <h3>Veneen 3 malli</h3>
-                            <p class="price">00 000 €</p>
+                            <h3>The old tug</h3>
+                            <p class="price">1 250 000 €</p>
                         </div>
                     </article>
 
